@@ -19,8 +19,8 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-app.listen(3060, function(){
-  console.log("APP.JS STARTED");
-});
+// app.listen(3060, function(){
+//   console.log("APP.JS STARTED");
+// });
 
-// app.listen(process.env.PORT, process.env.IP, () => console.log("Server Has Started!"));
+app.listen(process.env.PORT, process.env.IP, () => console.log("Server Has Started!"));
