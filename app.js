@@ -22,5 +22,4 @@ app.get("/", function(req, res) {
 // app.listen(3060, function(){
 //   console.log("APP.JS STARTED");
 // });
-
 app.listen(process.env.PORT, process.env.IP, () => console.log("Server Has Started!"));
