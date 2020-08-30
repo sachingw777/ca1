@@ -4,6 +4,8 @@ var express 	= require("express"),
     mongoose    = require("mongoose"),
     Customer 	= require("./models/customers");
 
+//local host
+// mongoose.connect("mongodb://localhost/ca_db",{ useUnifiedTopology: true, useNewUrlParser: true }); //create yelpcamp db inside mongodb
 
 let url = process.env.DATABASEURL;
 mongoose.connect(url,{ useUnifiedTopology: true, useNewUrlParser: true }); //create yelpcamp db inside mongodb
@@ -17,6 +19,8 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-app.listen(3059, function(){
-  console.log("APP.JS STARTED");
-});
+// app.listen(3057, function(){
+//   console.log("APP.JS STARTED");
+// });
+
+app.listen(process.env.PORT, process.env.IP, () => console.log("The VacayCity Server Has Started!"));
