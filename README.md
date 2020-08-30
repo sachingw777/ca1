@@ -2,7 +2,7 @@
 
 #Frontend
  * TODO
-	*Add Forms (Need GET/POST route for this).
+	* Add Forms (Need GET/POST route for this).
 
 #Backend
  * TODO's
@@ -12,4 +12,4 @@
 
 #Heroku
  * TODO's
-	*Fix Database connectivity. For some reason it is throwing up error upon integation with CleverCloud. Local works fine.
+	* Fix Database connectivity. For some reason it is throwing up error upon integation with CleverCloud. Local works fine.
