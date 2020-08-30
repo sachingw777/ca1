@@ -23,4 +23,4 @@ app.get("/", function(req, res) {
 //   console.log("APP.JS STARTED");
 // });
 
-app.listen(process.env.PORT, process.env.IP, () => console.log("The VacayCity Server Has Started!"));
+app.listen(process.env.PORT, process.env.IP, () => console.log("Server Has Started!"));
