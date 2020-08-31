@@ -5,10 +5,11 @@ var express 	= require("express"),
     Customer 	= require("./models/customers");
 
 //local host
+
 // mongoose.connect("mongodb://localhost/ca_db",{ useUnifiedTopology: true, useNewUrlParser: true }); //create yelpcamp db inside mongodb
 
 let url = process.env.DATABASEURL;
-mongoose.connect(url,{ useUnifiedTopology: true, useNewUrlParser: true }); //create yelpcamp db inside mongodb
+mongoose.connect(url,{ useUnifiedTopology: true, useNewUrlParser: true }); //connect to mongodb scalegrid cluster.
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
